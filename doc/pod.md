@@ -1,3 +1,16 @@
+### List pod in a namespace
+If you want tail the output use option -w
+```bash
+oc get pod -n <namespace>
+```
+
+
+
+
+
+
+
+
 ### Run pod with kubectl
 ```bash
 kubectl run web-server --image registry.access.redhat.com/ubi8/httpd-24
