@@ -1,15 +1,14 @@
-### List pod in a namespace
+### 1. List pod in a namespace
 If you want tail the output use option -w
 ```bash
 oc get pod -n <namespace>
 ```
 
-
-
-
-
-
-
+### 2. Access to pod 
+If you want tail the output use option -w
+```bash
+oc rsh pod -n <namespace>
+```
 
 ### Run pod with kubectl
 ```bash
