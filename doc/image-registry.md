@@ -4,4 +4,4 @@
 oc policy add-role-to-user \
 system:image-puller system:serviceaccount:databand-system:default \
 --namespace=openshift-image-registry
-``'
+```
