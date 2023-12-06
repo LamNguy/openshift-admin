@@ -1,8 +1,8 @@
-Get cluster info
+### Get cluster info
 ```
 oc cluster-info
 ```
-Check cluster operator
+### Check cluster operator
 ```
 oc clusteroperator
 ```
