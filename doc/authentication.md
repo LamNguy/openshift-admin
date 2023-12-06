@@ -1,7 +1,7 @@
-# Authentication
+## Authentication
 ```sh
+# login to cluster
 oc login -u <username> -p <password> --server <server_url>
-oc whoami
 # check current user
 oc whoami
 # check current console URL
