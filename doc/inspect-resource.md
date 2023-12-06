@@ -10,3 +10,13 @@ oc get pods -n openshift-etcd etcd-master01 \
   -o json | jq .status.conditions
 ```
 
+Inspect 
+```bash
+oc get pods -n openshift-storage -o yaml \
+  -o custom-columns=PodName:".metadata.name",\
+ContainerName:"spec.containers[].name",\
+Phase:"status.phase",\
+IP:"status.podIP",\
+Ports:"spec.containers[].ports[].containerPort"
+```
+
