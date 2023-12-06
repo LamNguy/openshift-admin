@@ -4,5 +4,5 @@ oc cluster-info
 ```
 ### Check cluster operator
 ```
-oc clusteroperator
+oc get clusteroperator
 ```
