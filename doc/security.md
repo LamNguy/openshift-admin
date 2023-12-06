@@ -1,4 +1,4 @@
-#Security Context Constraints
+# Security Context Constraints
 It is basically used for pod restriction, which means it defines the limitations for a pod, as in what actions it can perform and what all things it can access in the cluster.
 OpenShift provides a set of predefined SCC that can be used, modified, and extended by the administrator.
 
