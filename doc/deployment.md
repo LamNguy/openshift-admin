@@ -4,7 +4,7 @@ To prevent these multiple deployments, pause the rollout, apply all your modific
 
 Use the oc rollout pause command to pause the rollout of the myapp deployment:
 ```bash
-oc rollout pause deployment/myapp![image](https://github.com/LamNguy/openshift-admin/assets/36146385/f6c83d95-149d-4926-a6f0-2a70ca47a1f2)
+oc rollout pause deployment/myapp
 ```
 
 Apply all your modifications to the Deployment object. The following example modifies the image, an environment variable, and the readiness probe
@@ -14,3 +14,9 @@ nginx-120=registry.access.redhat.com/ubi9/nginx-120:1-86
 
 oc set probe deployment/myapp --readiness --get-url http://:8080
 ```
+Resume the rollout:
+```bash
+oc rollout resume deployment/myapp
+```
+You can follow a similar process when you create and configure a new deployment:
+
